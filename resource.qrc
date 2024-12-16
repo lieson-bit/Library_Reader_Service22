@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/resource"/>
+    <qresource prefix="/">
+        <file>img/login-icon.png</file>
+        <file>img/ok.jpg</file>
+        <file>img/lo.png</file>
+        <file>img/lieson.png</file>
+        <file>img/imag.png</file>
+        <file>img/Scre.png</file>
+        <file>img/bar.png</file>
+        <file>img/pie.png</file>
+        <file>img/book.png</file>
+        <file>img/exit.png</file>
+        <file>img/profile.png</file>
+        <file>img/add.png</file>
+        <file>img/database.png</file>
+        <file>img/delete.png</file>
+        <file>img/file.png</file>
+        <file>img/sort.png</file>
+        <file>img/update.png</file>
+        <file>img/issuing.png</file>
+        <file>img/minimize.png</file>
+        <file>img/guap.png</file>
+        <file>img/receiving.png</file>
+        <file>img/back.png</file>
+        <file>img_book/C++ complete course.png</file>
+        <file>img_book/Java Script done.png</file>
+        <file>img_book/Obedience to God.png</file>
+        <file>img_book/The heart of God.png</file>
+        <file>img_book/Welcome Home.png</file>
+        <file>img_book/Come back home.png</file>
+        <file>img_book/Money talks.png</file>
+        <file>img_book/God.png</file>
+    </qresource>
+</RCC>

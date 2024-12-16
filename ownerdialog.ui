@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ownerDialog</class>
+ <widget class="QDialog" name="ownerDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1800</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1800</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1800</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Учетная запись владельца</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/img/Scre.png</normaloff>:/img/Scre.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ownerDialog{
+	background:#E2DFD2;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>600</y>
+     <width>1751</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label{
+	
+	border-top: 1px solid#4f4f4f; /* Top border */
+    border-bottom: 1px solid #4f4f4f; /* Bottom border */
+    border-left: 1px solid #4f4f4f; /* Left border */
+    border-right: 1px solid #4f4f4f; /* Right border */
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>611</y>
+     <width>991</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#tableView{
+	
+	background-color: rgb(250, 249, 246);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="search_view">
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>610</y>
+     <width>631</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#search_view{
+	
+	background-color: rgb(250, 249, 246);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>600</y>
+     <width>41</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="users_data_button">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>560</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#users_data_button{
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+	border-radius:15px;
+	color:black;
+	
+	background-color: white;
+}
+
+#users_data_button:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Users</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/Scre.png</normaloff>:/img/Scre.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="books_data_button">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>560</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#books_data_button{
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+	border-radius:15px;
+	color:black;
+	
+	background-color: white;
+	
+}
+
+#books_data_button:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+	
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>books</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/book.png</normaloff>:/img/book.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clear_table_view">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>560</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#clear_table_view{
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+	border-radius:15px;
+	color:black;
+	
+	background-color: rgb(255, 229, 180);
+	
+}
+
+#clear_table_view:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+	
+}
+</string>
+   </property>
+   <property name="text">
+    <string>clear</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/delete.png</normaloff>:/img/delete.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="searchButtononedit">
+   <property name="geometry">
+    <rect>
+     <x>1410</x>
+     <y>560</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#searchButtononedit{
+	color: rgb(255, 255, 255);
+	background-color: rgb(79, 79, 79);
+}
+
+#searchButtononedit:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 85, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="search_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>1490</x>
+     <y>560</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#search_lineEdit{
+	
+	background-color: rgb(255, 255, 255);
+}</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>70</y>
+     <width>651</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame{
+	border-top: 1px solid#4f4f4f; /* Top border */
+    border-bottom: 1px solid #4f4f4f; /* Bottom border */
+    border-left: 1px solid #4f4f4f; /* Left border */
+    border-right: 1px solid #4f4f4f; /* Right border */
+	background-color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>321</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>40</y>
+      <width>281</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sendpic_nameline">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>390</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pic_button">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>400</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pie_chart{
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+	border-radius:15px;
+	color:black;
+	
+	background-color: rgb(255, 229, 180);
+	
+}
+
+#pie_chart:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>send</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>20</y>
+      <width>201</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_9{
+	color: rgb(0, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Books available</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Message_box">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>400</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Message_box{
+	
+	background-color: #FFF5EE;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="send_message">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#send{
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+	border-radius:15px;
+	color:black;
+	
+	background-color: rgb(255, 229, 180);
+	
+}
+
+#send:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>send</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="idmessage">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_10{
+	color: rgb(0, 0, 127);
+}</string>
+    </property>
+    <property name="text">
+     <string>Receiver</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>0</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_5{
+	color: rgb(0, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Message Box</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="subcription_bar">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>30</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#subcription_bar{
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+	border-radius:15px;
+	color:black;
+	
+	background-color: rgb(255, 229, 180);
+	
+}
+
+#subcription_bar:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+	
+}</string>
+   </property>
+   <property name="text">
+    <string>User account</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/bar.png</normaloff>:/img/bar.png</iconset>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="search_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>1230</x>
+     <y>560</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#search_comboBox{
+	background-color: rgb(79, 79, 79);
+	color: rgb(255, 255, 255);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>1690</x>
+     <y>30</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#exit{
+	color: rgb(255, 255, 255);
+	background-color: rgb(29, 95, 1);
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+}
+
+#exit:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+	
+}</string>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/exit.png</normaloff>:/img/exit.png</iconset>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>111</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#graphicsView{
+	background-image: url(:/img/profile.png);
+	border-radius:38px;
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_3{
+	
+	color:black;
+}</string>
+   </property>
+   <property name="text">
+    <string>МВАЛЕ ЛИСОН</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="functions_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#functions_comboBox{
+	background-color: rgb(79, 79, 79);
+	color: rgb(255, 255, 255);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_user">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#save_user{
+	border-radius:15px;
+	background-color: rgb(237, 234, 222);
+	color:black;
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+}
+
+
+#save_user:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_user">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>410</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#comboBox_user{
+	border-radius:15px;
+	background-color: rgb(237, 234, 222);
+	color:black;
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+}
+
+
+#comboBox_user:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_user">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>109</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#add_user{
+	border-radius:15px;
+	background-color: rgb(237, 234, 222);
+	color:black;
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+}
+
+
+
+#add_user:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/add.png</normaloff>:/img/add.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delete_user">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>260</y>
+     <width>109</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#delete_user{
+	border-radius:15px;
+	background-color: rgb(237, 234, 222);
+	color:black;
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+}
+
+
+#delete_user:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/delete.png</normaloff>:/img/delete.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="update_user">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>109</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#update_user{
+	border-radius:15px;
+	background-color: rgb(237, 234, 222);
+	color:black;
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+}
+
+#update_user:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Update</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/update.png</normaloff>:/img/update.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sort_user">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>360</y>
+     <width>109</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sort_user{
+	border-radius:15px;
+	background-color: rgb(237, 234, 222);
+	color:black;
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+}
+
+
+
+#sort_user:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Sort</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/sort.png</normaloff>:/img/sort.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>110</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_6{
+	color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>INPUT DATA</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="verticalFrame">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>130</y>
+     <width>231</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="input_1"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_2"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_3"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_4"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_5"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_6"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input_7"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="comments_on_inputs">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>490</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#comments_on_inputs{
+	color:black;
+	background-color: rgb(240, 234, 214);
+	border-radius:15px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="minimize">
+   <property name="geometry">
+    <rect>
+     <x>1640</x>
+     <y>30</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#minimize{
+	
+	background-image: url(:/img/minimize.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>450</y>
+     <width>521</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_4{
+	border-top: 1px solid#4f4f4f; /* Top border */
+    border-bottom: 1px solid #4f4f4f; /* Bottom border */
+    border-left: 1px solid #4f4f4f; /* Left border */
+    border-right: 1px solid #4f4f4f; /* Right border */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>80</y>
+     <width>20</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>453</x>
+     <y>80</y>
+     <width>20</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="history_label">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>110</y>
+     <width>521</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#history_label{
+	
+	background-color: #FFFFF0;
+	border-top: 1px solid#4f4f4f; /* Top border */
+    border-bottom: 1px solid #4f4f4f; /* Bottom border */
+    border-left: 1px solid #4f4f4f; /* Left border */
+    border-right: 1px solid #4f4f4f; /* Right border */
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>80</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_7{
+	color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>History</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>157</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>157</width>
+     <height>70</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>157</width>
+     <height>70</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#graphicsView_2{
+	background-image: url(:/img/guap.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>30</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro Black</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_8{
+	color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Owner's 
+ account</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_table_view">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>560</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#save_table_view{
+	border-top: 3px solid#4f4f4f; /* Top border */
+    border-bottom: 3px solid #4f4f4f; /* Bottom border */
+    border-left: 3px solid #4f4f4f; /* Left border */
+    border-right: 3px solid #4f4f4f; /* Right border */
+	border-radius:15px;
+	color:black;
+	
+	background-color: rgb(255, 229, 180);
+	
+}
+
+#save_table_view:hover{
+	color:white;
+	background-color: rgb(255, 85, 0);
+	
+}
+</string>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/database.png</normaloff>:/img/database.png</iconset>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>110</y>
+     <width>521</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#listWidget{
+	
+	background-color: #FFFFF0;
+	border-top: 1px solid#4f4f4f; /* Top border */
+    border-bottom: 1px solid #4f4f4f; /* Bottom border */
+    border-left: 1px solid #4f4f4f; /* Left border */
+    border-right: 1px solid #4f4f4f; /* Right border */
+
+}</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>110</y>
+     <width>20</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_5">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>110</y>
+     <width>20</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_6">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>110</y>
+     <width>20</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <zorder>label_4</zorder>
+  <zorder>label</zorder>
+  <zorder>tableView</zorder>
+  <zorder>search_view</zorder>
+  <zorder>line</zorder>
+  <zorder>users_data_button</zorder>
+  <zorder>books_data_button</zorder>
+  <zorder>clear_table_view</zorder>
+  <zorder>searchButtononedit</zorder>
+  <zorder>search_lineEdit</zorder>
+  <zorder>frame</zorder>
+  <zorder>subcription_bar</zorder>
+  <zorder>search_comboBox</zorder>
+  <zorder>exit</zorder>
+  <zorder>graphicsView</zorder>
+  <zorder>label_3</zorder>
+  <zorder>functions_comboBox</zorder>
+  <zorder>save_user</zorder>
+  <zorder>comboBox_user</zorder>
+  <zorder>add_user</zorder>
+  <zorder>delete_user</zorder>
+  <zorder>update_user</zorder>
+  <zorder>sort_user</zorder>
+  <zorder>label_6</zorder>
+  <zorder>verticalFrame</zorder>
+  <zorder>comments_on_inputs</zorder>
+  <zorder>minimize</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line_3</zorder>
+  <zorder>history_label</zorder>
+  <zorder>label_7</zorder>
+  <zorder>graphicsView_2</zorder>
+  <zorder>label_8</zorder>
+  <zorder>save_table_view</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>line_4</zorder>
+  <zorder>line_5</zorder>
+  <zorder>line_6</zorder>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

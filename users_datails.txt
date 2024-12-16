@@ -1,0 +1,15 @@
+B1234-23,Prince Mwale,13.08.2000,prince@gmail.com,Redona Rd 21,4321st
+B4502-21,Jonh Phiri,12.03.2003,john@gmail.com,Weiwei 23,john123
+A2593-20,Mwale Lieson,08.01.2001,lieson@gmail.com,41 Katunga,tripleP,
+R9021-21,Mwape Zolela,28.11.2004,mwape@gmail.com,Chingola 41,zemwa
+B0277-24,bobo mwanza,9.6.2004,mwanz@gmail.com,feliza-12A,90dfe
+B1243-22,Gosha vitia,12.09.1999,vitia@gmail.com,varshavskaya 12,go12
+A7843-23,Masha kuwai,19.04.2002,kuwai@gmail.com,Kommedatski 45,78gh
+A4291-20,Tasha Werry,11.11.1997,tasha@gmail.com,Barovaya 23,tasha
+R9532-20,Alex simvo,25.05.2003,alex@gmail.com,Sinaya 28,the12
+B3461-24,Gwendo Mupapa,9.7.1998,gwendo@gmail.com,Sadova 54,12ab
+A7929-24,Eliya warrins,7.9.2002,eliya@gmail.com,Maskovskaya 53,eliya
+B5243-24,Warry Gala,12.6.1991,gala@gmai.com,13 Quadea,wela
+R4454-24,Andrei Pan,1.1.2013,panch@gm.com,12 Gastela,pass
+A8022-24,Samuel,6.9.2001,samu@gma.com,234,sam
+R1208-24,Gwan Mwa,6.8.2021,ma22@gmail.com,12gfh,mwa12

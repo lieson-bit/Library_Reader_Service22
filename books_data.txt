@@ -1,0 +1,7 @@
+001.201,Prince Li,Obedience to God,Jmax-lim,2022,5,4
+003.432,Roby johns,Money talks,Ted talks,2022,3,2
+005.213,Voddie Bonchur,Welcome Home,Jmax-lim,2021,4,4
+008.128,Prince Boston,C++ complete course,Guap,2023,3,2
+010.222,Lieson Mwale,The heart of God,Te-library,2024,8,8
+015.010,Paul Washer,Come back home,Jmax-lim,2024,3,3
+021.321,Werry Wabro,Java Script done,UNZA,2020,2,2
